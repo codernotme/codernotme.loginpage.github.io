@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Signup Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="loginButton" class="button" onmouseover="showLoginForm()"><i class="fas fa-lock"></i> Login/Signup</button>
+    <form class="login-form" id="loginForm" onsubmit="return false;">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button class="button" onclick="showWelcomeMessage()">Login</button>
+    </form>
+    <div class="welcome-message-box">
+      <div class="welcome-message" id="welcomeMessage"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
